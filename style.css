@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #202124;
+    color: #bdc1c6;
+    font-family: arial,sans-serif;
+}
+
+/* cabeçalho do site */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.menu1 a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #bdc1c6;
+    padding: 0 5px;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu2 img {
+    width: 25px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: #bdc1c6;
+    background-color: blue;
+    align-items: center;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* seção principal do site */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo1 {
+    max-height: 290px;
+    min-height: 92px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.pesquisa {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 24px;
+    height: 40px;
+    width: 582px;
+    align-items: center;
+}
+
+.iconPrincipal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: auto;
+}
+
+.pesquisa input {
+    align-items: auto;
+}
+
+.imputIcon {
+    width: 455px;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 38px;
+    font-size: 16px;
+    color: white;
+}
+
+#imgLupa {
+    display: flex;
+}
+
+#tresImg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.botoesdepesquisa input {
+    background-color: #303134;
+    border: none;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: ;
+    margin: 11px 4px;
+}
+
+/* Parte final do site */
+
+footer {
+    background-color: rgb(22, 22, 22);
+    bottom: 0;     
+    position: fixed;     
+    width: 100%;
+}
+
+#localizacao {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+#localizacao p {
+    padding: 15px 35px;
+    font-style: normal;
+    margin: 0;
+}
+
+#linksAcesso {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#linksAcesso a {
+    text-decoration: none;
+    color: #bdc1c6;
+    font-size: 14px;
+    padding: 15px 15px 15px 25px;
+}
