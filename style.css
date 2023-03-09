@@ -20,8 +20,12 @@ header {
 .menu1 a {
     text-decoration: none;
     font-size: 15px;
-    color: #bdc1c6;
+    color: #FFFFFF;
     padding: 0 5px;
+}
+
+.menu1 a:hover {
+    text-decoration: underline;
 }
 
 .menu2 {
@@ -33,17 +37,28 @@ header {
     width: 25px;
     align-items: center;
     margin-right: 15px;
+    padding: 5px;
+}
+
+.menu2 img:hover {
+    background-color: #303134;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .menu2 a {
     text-decoration: none;
-    color: #bdc1c6;
-    background-color: blue;
+    color: #FFFFFF;
+    background-color: #1a73e8;
     align-items: center;
     font-family: arial,sans-serif;
     font-size: 15px;
     border-radius: 8px;
     padding: 10px 20px;
+}
+
+.menu2 a:hover{
+    background-color: #234e86;
 }
 
 /* seção principal do site */
@@ -56,8 +71,8 @@ section {
 }
 
 .logo1 {
-    max-height: 290px;
-    min-height: 92px;
+    /* max-height: 290px; */
+    /* min-height: 92px; */
     margin-top: 120px;
     margin-bottom: 30px;
 }
@@ -65,12 +80,17 @@ section {
 .pesquisa {
     margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
-    border: 2px solid gray;
+    justify-content: space-around;
+    border: 1px solid rgba(128, 128, 128, 0.534);
     border-radius: 24px;
     height: 40px;
     width: 582px;
     align-items: center;
+}
+
+.pesquisa:hover {
+    background-color: #303134;
+    border: none;
 }
 
 .iconPrincipal {
@@ -85,7 +105,7 @@ section {
 }
 
 .imputIcon {
-    width: 455px;
+    width: 425px;
     background: transparent;
     border: none;
     outline: none;
@@ -94,14 +114,11 @@ section {
     color: white;
 }
 
-#imgLupa {
-    display: flex;
-}
-
 #tresImg {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 15px;
 }
 
 
@@ -115,8 +132,11 @@ section {
     cursor: pointer;
     border-radius: 4px;
     color: #FFFFFF;
-    font-size: ;
     margin: 11px 4px;
+}
+
+.botoesdepesquisa input:hover {
+    border: 1px solid rgba(128, 128, 128, 0.534);
 }
 
 /* Parte final do site */
@@ -149,4 +169,55 @@ footer {
     color: #bdc1c6;
     font-size: 14px;
     padding: 15px 15px 15px 25px;
+}
+
+@media only screen and (max-width: 500px){
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo1 a {
+    width: 200px;
+}
+
+.pesquisa {
+    width: 95%;
+}
+
+.imputIcon {
+    width: 60%;
+}
+
+.botoesdepesquisa {
+    display: flex;
+    flex-direction: column;
+}
+
+#linksAcesso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+#linksAcesso a {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#localizacao p {
+    padding: 0;
+    margin: 10px;
+}
+
 }
